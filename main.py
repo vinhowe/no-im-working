@@ -1,8 +1,10 @@
 import sys
 from PyQt5 import QtCore, QtWidgets
 from PyQt5.QtGui import QFont
-from PyQt5.QtWidgets import QMainWindow, QLabel, QGridLayout, QWidget, QCheckBox
+from PyQt5.QtWidgets import QMainWindow, QLabel, QGridLayout, QWidget, QCheckBox, QApplication
 from PyQt5.QtCore import QSize
+
+QApplication.setAttribute(QtCore.Qt.AA_EnableHighDpiScaling, True)
 
 working = "working"
 not_working = f"not {working}"
