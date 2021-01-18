@@ -47,7 +47,7 @@ class WorkingWindow(QMainWindow):
         self.setWindowTitle(working if is_checked else not_working)
 
 
-if __name__ == "__main__":
+def show_window():
     app = QtWidgets.QApplication(sys.argv)
     mainWin = WorkingWindow()
     mainWin.show()
